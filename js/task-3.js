@@ -2,7 +2,7 @@ function checkForSpam(message) {
   const spamWords = ['spam', 'sale'];
   const messageInLowRegister = message.toLowerCase();
 
-  for (i = 0; i < spamWords.length; i++) {
+  for (let i = 0; i < spamWords.length; i++) {
     if (messageInLowRegister.includes(spamWords[i])) {
       return true;
     }
